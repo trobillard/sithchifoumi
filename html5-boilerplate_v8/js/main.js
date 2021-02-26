@@ -18,11 +18,11 @@ alert("Let me remind you what is THE CHIFOUMI GAME");
 alert("The first known mention of the game was in the book Wuzazu [zh] by the Chinese Ming-dynasty writer Xie Zhaozhi [zh] (fl. c. 1600), who wrote that the game dated back to the time of the Chinese... ")
 
 var next = prompt ("WHAAAAAAAT are you skipping????");
-if (skip[0]==="yes"){
-    alert("You prank!! Let's play");
+if (skip[0]=== true){
+    alert("You dumb!! Let's play");
 }
 else{
-    alert("Got ya!! let's play"); //Doesn t work yet
+    alert("Got ya!! we are not here to talk let's play"); //Doesn t work yet
 }
 
 //Game start
