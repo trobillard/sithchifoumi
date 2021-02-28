@@ -13,7 +13,8 @@ var game = (playerChoice, computerChoice);
 function start() {
     alert("Well then make your choice"); // Player s choice
     var playerChoice = prompt (choices).toUpperCase();
-    
+    alert("you think the " +playerChoice+ " can help you?");
+
     alert ("My turn it is young Padawan") //Computer s choice call by function
     function cpuChoice() {
         var randomIndex = Math.floor(Math.random() * Math.floor(choices.length)); // using Mat.floor and Math.random in the var choices table
