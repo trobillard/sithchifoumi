@@ -1,15 +1,45 @@
 //CHIFOUMI PROJECT
-//VAR DECLARE
+//VAR :
 
 var choices = ["ROCK", "PAPER", "SCISSORS"];
 var skip = ["yes", "no"];
 var winPairs = ["Feuille/Pierre", "Pierre/Cisceaux", "Cisceaux/Pierre"]
 var scores = {"player" : 0, "computer" : 0};
+var playerChoice = (choices);
+var game = (playerChoice, computerChoice);
 
+//FUNCTION :
+
+function start() {
+    alert("Well then make your choice"); // Player s choice
+    var playerChoice = prompt (choices).toUpperCase();
+    
+    alert ("My turn it is young Padawan") //Computer s choice call by function
+    function cpuChoice() {
+        var randomIndex = Math.floor(Math.random() * Math.floor(choices.length)); // using Mat.floor and Math.random in the var choices table
+        return choices[randomIndex];
+        }
+    
+    var computerChoice = cpuChoice();           //We call the function
+    alert("I've chosen " + computerChoice);
+
+    var game = (playerChoice, computerChoice);
+    if (playerChoice === computerChoice) {
+        alert("Damn we are even!!! Stop cheating on me");
+    }
+    else if ((computerChoice === "PAPER" && playerChoice === "SCISSORS") || (computerChoice === "ROCK" && playerChoice === "PAPER") || (computerChoice === "SCISSORS" && playerChoice === "ROCK")){
+        alert("DAMN, you won  " + name + "! You are a cheater");
+        scores["player"] += 1;
+    }
+    else {
+        alert("NOOB, you LOST!!!!! " + name + ", you are such a loser!!!!");
+        scores["computer"] += 1;
+    }
+}
 // Introduction
 alert("If you are reading this it's too late"); 
 
-var name = prompt ("What's your name challenger ?");
+var name = prompt ("What's your name challenger ?").toUpperCase();
 
 alert("Wonderbar " + name +"!!!" + " Are you ready to play your life ?"); // SHows player name
 
@@ -26,31 +56,9 @@ else{
 }
 
 //Game start
-alert("Well then make your choice"); // Player s choice
-var playerChoice = prompt (choices)
+start();
 
-alert ("My turn it is young Padawan") //Computer s choice call by function
-function cpuChoice() {
-    var randomIndex = Math.floor(Math.random() * Math.floor(choices.length)); // using Mat.floor and Math.random in the var choices table
-    return choices[randomIndex];
-    }
 
-var computerChoice = cpuChoice();           //We call the function
-alert("I've chosen " + computerChoice);
-
-//END Of the game
-var game = (playerChoice, computerChoice);
-    if (playerChoice === computerChoice) {
-        alert("Damn we are even!!! Stop cheating on me");
-    }
-    else if ((computerChoice === "PAPER" && playerChoice === "SCISSORS") || (computerChoice === "ROCK" && playerChoice === "PAPER") || (computerChoice === "SCISSORS" && playerChoice === "ROCK")){
-        alert("DAMN, you won  " + name + "! You are a cheater");
-        scores["player"] += 1;
-    }
-    else {
-        alert("NOOB, you LOST!!!!! " + name + ", you are such a loser!!!!");
-        scores["computer"] += 1;
-    }
      
 //Showing reslut
     alert("RESULTS : \n" + name + " : " + scores["player"] + "\nDarth Lord : " + scores["computer"]);
@@ -63,3 +71,6 @@ else{
     alert("You know you can't defeat the Darth Lord!!"); //Doesn t work yet
 }
 
+
+
+start();
