@@ -27,7 +27,7 @@ function start() {
     if (playerChoice === computerChoice) {
         alert("The fight is tight");
     }
-    else if ((computerChoice === "BLASTER" && playerChoice === "FORCE") || (computerChoice === "LIGHTSABER" && playerChoice === "PAPER") || (computerChoice === "SCISSORS" && playerChoice === "ROCK")){
+    else if ((computerChoice === "BLASTER" && playerChoice === "FORCE") || (computerChoice === "LIGHTSABER" && playerChoice === "BLASTER") || (computerChoice === "FORCE" && playerChoice === "LIGHTSABER")){
         alert("The force will always be with you  " + name + "! always");
         scores["player"] += 1;
     }
@@ -67,3 +67,12 @@ else{
 
 
 start();
+alert("RESULTS : \n" + name + " : " + scores["player"] + "\nDarth Lord : " + scores["computer"]);
+
+var newgame = prompt ("Let's play again");
+if (skip[0]=== true){
+alert("Go back to work!!");
+}
+else{
+alert("You know you can't defeat the Darth Lord!!"); //Doesn t work yet
+}

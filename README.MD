@@ -1,7 +1,9 @@
-# CHIFOUMI. 
-- Please find hereby my POPCULTURE CHIFOUMI with different easter eggs.
+# THE SITH CHIFOUMI. (**Second week project with AFPA using JavaScript**.)   
+- Please find hereby my STAR WARS CHIFOUMI with different easter eggs.
+-- ROCK = LIGHTSABER  
+-- PAPER = BLASTER  
+-- SCISSORS = FORCE  
 
-- Second week  project with AFPA using **JavaScript**.
 
 ## Pré-Requis :
 
