@@ -1,9 +1,9 @@
 # THE SITH CHIFOUMI (**Second week project with AFPA using JavaScript**)   
 - Please find hereby my STAR WARS CHIFOUMI with different easter eggs.   
 
-	--ROCK = LIGHTSABER  
-	--PAPER = BLASTER  
-	--SCISSORS = FORCE  
+	- ROCK = LIGHTSABER  
+	- PAPER = BLASTER  
+	- SCISSORS = FORCE  
 
 
 ## Pré-Requis :
