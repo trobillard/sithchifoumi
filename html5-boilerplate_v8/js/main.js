@@ -54,3 +54,12 @@ var game = (playerChoice, computerChoice);
      
 //Showing reslut
     alert("RESULTS : \n" + name + " : " + scores["player"] + "\nDarth Lord : " + scores["computer"]);
+
+    var newgame = prompt ("Let's play again");
+if (skip[0]=== true){
+    alert("Go back to work!!");
+}
+else{
+    alert("You know you can't defeat the Darth Lord!!"); //Doesn t work yet
+}
+
