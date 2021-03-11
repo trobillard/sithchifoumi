@@ -5,7 +5,7 @@ var choices = ["LIGHTSABER", "BLASTER", "FORCE"];
 var skip = ["yes", "no"];
 var scores = {"player" : 0, "computer" : 0};
 var playerChoice = (choices);
-var game = (playerChoice, computerChoice);
+//var game = (playerChoice, computerChoice);
 
 //FUNCTION :
 
